@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+* {
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    margin: auto;
+    box-sizing: border-box;
+    color: var(--whiteColor);
+}
+
+:root {
+    /* Primary color */
+    --softBlueColor: hsl(215, 51%, 70%);
+    --cyanColor: hsl(178, 100%, 50%);
+    
+    /* Neutral color */
+    --darkBlueBG: hsl(217, 54%, 11%);
+    --darkBlueCard: hsl(216, 50%, 16%);
+    --darkBlueLine: hsl(215, 32%, 27%);
+    --whiteColor: hsl(0, 0%, 100%);
+}
+
+/* All about the content */
+body {
+    background-color: var(--darkBlueBG);
+    height: 100vh;
+    position: relative;
+}
+
+.content {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    
+    background-color: var(--darkBlueCard);
+    border-radius: 20px;
+    width: 330px;
+    height: 540px;
+    padding: 15px 10px;
+    box-shadow:  1px 1px 200px -80px black;    
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* All the properties about the Card and hover */
+.cardImage {
+    position: relative;
+}
+
+.cover {
+    border-radius: 10px;
+    width: 280px;
+}
+
+.cardHover {
+    background-color: hsla(178, 100%, 50%, 0.507);
+    width: 280px;
+    height: 280px;
+    display: none;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.eye {
+    margin: 118px; /* To keep the eye in the middle */
+}
+
+.cardImage:hover .cardHover{
+    cursor: pointer;
+    display: inline;
+}
+
+/* From here you see about the description from the card */
+.title, .description, .creator, .info {
+    align-items: self-start;
+    margin: 0;
+    padding: 0 15px;
+}
+
+.title {
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.title:hover, .nameCreator:hover {
+    color: var(--cyanColor);
+    cursor: pointer;
+}
+
+.description {
+    line-height: 25px;
+}
+
+.opacity {
+    color: var(--softBlueColor);
+    opacity: 90%;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.horizontal {
+    gap: 8px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.info {
+    display: flex;
+}
+
+.qtCoin {
+    color: var(--cyanColor);
+    font-size: 16px;
+}
+
+hr {
+    opacity: 30%;
+    margin: 0 auto;
+    width: 280px;
+}
+    
+.creator {
+    display: flex;
+    justify-content: left;
+}
+
+.avatarCreator {
+    margin: 0;
+}
+
+.profile {
+    width: 33px;
+    border: 1px solid var(--whiteColor);
+    border-radius: 50%;
+}
+
+.creationOf, .nameCreator{
+    font-size: 15px;
+}
