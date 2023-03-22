@@ -3,7 +3,7 @@
 ![Design preview for the Results summary component coding challenge](./design/desktop-preview.jpg)
 
 ## 🔗 Link
-- [Live Version](https://barbaradamasdev.github.io/NFT-preview-card-component/)
+- [Live Version](https://stupendous-fenglisu-98d850.netlify.app/)
 
 ## 😄 Hello! 
 
